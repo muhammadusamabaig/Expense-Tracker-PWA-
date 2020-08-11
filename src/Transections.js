@@ -46,10 +46,11 @@ return(        total+=item.amount)
     )
 
   return (
-    
     <div>
+            <Header positivetotal={positivetemp} nagitivetemp={nagitivetemp} total={total}/>
 
-      <Header positivetotal={positivetemp} nagitivetemp={nagitivetemp} total={total}/>
+<div className="row "  style={{marginTop:"2%"}}>
+
  
 
 
@@ -61,66 +62,44 @@ return(        total+=item.amount)
 
 
 
-<div className="row" style={{marginTop:"2%"}}>
         
-        <div className="col-5" >
-      
-
-        </div>
-        <div   
- className="col-4 text-left"  >
-<p style={{fontWeight:"bold"}}>Text</p>
-        </div>
-        </div>
-
-
-
-        <div className="row" >
         
-        <div className="col-5" >
-      
-
-        </div>
+        
+<span style={{fontWeight:"bold",marginLeft:"30%"}}>Text</span>
        
-        <input placeholder="Enter Text" type="text"className="col-4 text-left" value={Text} onChange={(e)=>{ setText(e.target.value)
+
+
+        
+      
+
+     
+       
+        <input placeholder="Enter Text" style={{marginLeft:"30%",height:"40px"}} type="text"className="col-6 text-left" value={Text} onChange={(e)=>{ setText(e.target.value)
       console.log(Text)
       }}/>       
-        </div>
-
-
-
-
-
-
-        <div className="row">
         
-        <div className="col-5" >
-      
 
-        </div>
-        <div   
- className="col-4 text-left"  >
+
+
+
+
+
+      
+          
    
-<p style={{ fontWeight:"bold"}}>amount <br/> <span style={{fontSize:"80%",fontWeight:"bold"}}>(Negitive - Expense Positive + Expense) </span>
- </p>
-        </div>
-        </div>
+   <span style={{fontWeight:"bold",marginLeft:"30%"}}>Amount</span>
 
-
-
-
-
-        <div className="row" >
-        
-        <div className="col-5" >
       
 
-        </div>
+
+
+
+
        
-        <input type="number" placeholder="Enter Ammount" className="col-4" value={amount} onChange={(e)=>{ setamount(e.target.value)
+        <input type="number" style={{marginLeft:"30%",height:"40px"}} placeholder="Enter Ammount" className="col-6" value={amount} onChange={(e)=>{ setamount(e.target.value)
       console.log(amount)
-      }}/>         
-        </div>
+      }}/>  
+    
 
 
         
@@ -130,16 +109,9 @@ return(        total+=item.amount)
 
 
 
-        <div className="row" style={{marginTop:"2%"}}>
+        <button type="button" style={{marginLeft:"30%",marginTop:"2%"}}  onClick={()=>{console.log(context.add_data(Text,amount,id))}} class="btn btn-primary col-6">Add Transection</button>
+</div>
         
-        <div className="col-5" >
-      
-
-        </div>
-        <button type="button"  onClick={()=>{console.log(context.add_data(Text,amount,id))}} class="btn btn-success col-4">Add Transection</button>
-
-        
-        </div>
     </div>
   );
 }
