@@ -13,15 +13,15 @@ const context=useContext(Globalcontext)
 
 
 
-<span style={{fontWeight:"bold",marginLeft:"30%"}}>Expense Tracker</span>
+<span style={{fontWeight:"bold",fontSize:"150%",marginLeft:"30%",color:"white",textDecoration:"underline"}}>Expense Tracker</span>
 
     </div>
     <div className="row">
 
 
-<span   className="col-3 text-center" style={{fontWeight:"bold",marginLeft:"30%",border:"2px solid"}}>Amount</span>
+  <span   className="col-3 text-center" style={{fontWeight:"bold",marginLeft:"30%"}}>Amount</span>
 
-<span   className="col-3 text-center" style={{fontWeight:"bold",marginLeft:"0%",border:"2px solid"}}>Amount</span>
+  <span   className="col-3 text-center" style={{fontWeight:"bold",marginLeft:"0%"}}>Name</span>
 
 </div>
     
@@ -32,12 +32,13 @@ const context=useContext(Globalcontext)
   <span className="col-6" style={{fontWeight:"bold",marginLeft:"30%"}}>{props.total}</span>
 
     </div> */}
-    <div className="row">
+    <div className="row ">
 
 
-  <span   className="col-3 text-center" style={{fontWeight:"bold",marginLeft:"30%",border:"2px solid"}}>{props.total}</span>
+  <span   className="col-3 text-center" style={{fontWeight:"bold",marginLeft:"30%",backgroundColor:"white"}}>{props.total}</span>
 
-<span   className="col-3 text-center" style={{fontWeight:"bold",marginLeft:"0%",border:"2px solid"}}>Amount</span>
+  <span   className="col-3 text-center" style={{fontWeight:"bold",marginLeft:"0%",backgroundColor:"white",borderLeft:"2px solid gray"}}>{props.nagitivetemp}</span>
+
 
 </div>
 

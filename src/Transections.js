@@ -46,25 +46,25 @@ return(        total+=item.amount)
     )
 
   return (
-    <div>
+          <div className="container">
             <Header positivetotal={positivetemp} nagitivetemp={nagitivetemp} total={total}/>
 
-<div className="row "  style={{marginTop:"2%"}}>
-
- 
 
 
 
-{/* form of data submition */}
+{
+  context.transections.map((item)=>{
+    return(
+      <div className="row" style={{marginTop:"2%"}}>
+ <img onClick={()=>{context.delettedata(item.id)}} style={{width:"6%",height:"7%",marginLeft:"25%"}}  src={process.env.PUBLIC_URL+"binimage.jpg"}/><span   className="col-3 text-center" style={{fontWeight:"bold",marginLeft:"0%",border:"2px solid white",color:"white"}}>{item.amount}</span>
+    <span   className="col-3 text-center" style={{fontWeight:"bold",marginLeft:"0%",border:"2px solid white",color:"white"}}>{item.name}</span>
+ </div>  
+    ) 
+  })
+}
 
 
-
-
-
-
-        
-        
-        
+<div className="row"  style={{marginTop:"2%"}}>
 <span style={{fontWeight:"bold",marginLeft:"30%"}}>Text</span>
        
 
