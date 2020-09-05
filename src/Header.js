@@ -19,9 +19,9 @@ const context=useContext(Globalcontext)
     <div className="row">
 
 
-  <span   className="col-3 text-center" style={{fontWeight:"bold",marginLeft:"30%"}}>Amount</span>
+  <span   className="col-3 text-center" style={{fontWeight:"bold",color:"white",marginLeft:"30%"}}>Amount</span>
 
-  <span   className="col-3 text-center" style={{fontWeight:"bold",marginLeft:"0%"}}>Name</span>
+  <span   className="col-3 text-center" style={{fontWeight:"bold",color:"white",marginLeft:"0%"}}>Name</span>
 
 </div>
     

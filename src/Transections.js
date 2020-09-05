@@ -56,7 +56,7 @@ return(        total+=item.amount)
   context.transections.map((item)=>{
     return(
       <div className="row" style={{marginTop:"2%"}}>
- <img onClick={()=>{context.delettedata(item.id)}} style={{width:"6%",height:"7%",marginLeft:"25%"}}  src={process.env.PUBLIC_URL+"binimage.jpg"}/><span   className="col-3 text-center" style={{fontWeight:"bold",marginLeft:"0%",border:"2px solid white",color:"white"}}>{item.amount}</span>
+ <img onClick={()=>{context.delettedata(item.id)}} style={{width:"60px",height:"70px",marginLeft:"25%"}}  src={process.env.PUBLIC_URL+"binimage.jpg"}/><span   className="col-3 text-center" style={{fontWeight:"bold",marginLeft:"0%",border:"2px solid white",color:"white"}}>{item.amount}</span>
     <span   className="col-3 text-center" style={{fontWeight:"bold",marginLeft:"0%",border:"2px solid white",color:"white"}}>{item.name}</span>
  </div>  
     ) 
@@ -65,7 +65,7 @@ return(        total+=item.amount)
 
 
 <div className="row"  style={{marginTop:"2%"}}>
-<span style={{fontWeight:"bold",marginLeft:"30%"}}>Text</span>
+<span style={{fontWeight:"bold",marginLeft:"30%",color:"white"}}>Text</span>
        
 
 
@@ -87,7 +87,7 @@ return(        total+=item.amount)
       
           
    
-   <span style={{fontWeight:"bold",marginLeft:"30%"}}>Amount</span>
+   <span style={{fontWeight:"bold",marginLeft:"30%",color:"white"}}>Amount</span>
 
       
 
@@ -109,7 +109,7 @@ return(        total+=item.amount)
 
 
 
-        <button type="button" style={{marginLeft:"30%",marginTop:"2%"}}  onClick={()=>{console.log(context.add_data(Text,amount,id))}} class="btn btn-primary col-6">Add Transection</button>
+        <button type="button" style={{marginLeft:"30%",marginTop:"2%",fontWeight:"bold",backgroundColor:"white"}}  onClick={()=>{console.log(context.add_data(Text,amount,id))}} class="btn col-6">Add Transection</button>
 </div>
         
     </div>
